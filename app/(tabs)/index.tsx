@@ -1,9 +1,12 @@
-import {FlatList, Image, Pressable, Text, TouchableOpacity, View} from "react-native";
+import {Button, FlatList, Image, Pressable, Text, TouchableOpacity, View} from "react-native";
+import * as Sentry from "@sentry/react";
 import {SafeAreaView} from "react-native-safe-area-context";
-import {images, offers} from "@/constants";
 import {Fragment} from "react";
 import cn from 'clsx'
+
+import {images, offers} from "@/constants";
 import CartButton from "@/components/CartButton";
+
 
 export default function Index() {
     return (
