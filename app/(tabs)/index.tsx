@@ -1,14 +1,16 @@
 import {Button, FlatList, Image, Pressable, Text, TouchableOpacity, View} from "react-native";
-import * as Sentry from "@sentry/react";
 import {SafeAreaView} from "react-native-safe-area-context";
 import {Fragment} from "react";
 import cn from 'clsx'
 
 import {images, offers} from "@/constants";
 import CartButton from "@/components/CartButton";
+import useAuthStore from "@/store/auth.store";
 
 
 export default function Index() {
+    const { user } = useAuthStore();
+
     return (
         <SafeAreaView className="flex-1 bg-white">
             <FlatList
