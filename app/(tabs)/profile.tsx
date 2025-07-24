@@ -20,8 +20,27 @@ const Profile = () => {
                         className=" rounded-full h-[110px] w-[110px] border-[3px] border-white shadow-sm shadow-neutral-300"
                     />
                 </View>
+                <View className="bg-white rounded-xl p-4 shadow-sm shadow-neutral-300 my-5">
+                <Text className="text-lg font-quicksand-bold mb-4">Personal Information</Text>
 
-                </ScrollView>
+                <View className="space-y-3">
+                    <View className="flex-row justify-between items-center">
+                        <Text className="text-gray-500">Name</Text>
+                        <Text className="font-quicksand-medium">Jose</Text>
+                    </View>
+                </View>
+            </View>
+            <View className="bg-white rounded-xl p-4 shadow-sm shadow-neutral-300 my-5">
+                <View className="space-y-3">
+                    <View className="flex-row justify-between items-center">
+                        <Text className="text-gray-500">Email</Text>
+                        <Text className="font-quicksand-medium">pucciarellijose@gmail.com</Text>
+                    </View>
+                </View>
+            </View>
+
+
+        </ScrollView>
             </SafeAreaView>
     )
 }
